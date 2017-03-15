@@ -1,0 +1,104 @@
+{
+"imageType":
+	[
+	{"key":"userct","image":"userct.png","highlighted_image":"userct_on.png"},
+	{"key":"listen","image":"listen.png","highlighted_image":"listen_on.png"},
+	{"key":"watch","image":"watch.png","highlighted_image":"watch_on.png"},
+	{"key":"sing","image":"sing.png","highlighted_image":"sing_on.png"},
+	{"key":"home_top_search","image":"home_top_search.png","highlighted_image":"home_top_search_on.png", "comment":"首页顶部的搜索"},
+	{"key":"home_top_bg","image":"home_top_bg.png", "comment":"首页顶部背景图片"},
+	{"key":"home_tab_underline","image":"home_tab_underline.png", "comment":"首页标题栏所选中图标的下划线"},
+	{"key":"listen_local_music","image":"listen_local_music.png", "comment":"本地音乐图标"},
+	{"key":"listen_like","image":"listen_like.png","highlighted_image":"listen_like_on", "comment":"首页-我喜欢图标"},
+	{"key":"listen_musiclist","image":"listen_musiclist.png","highlighted_image":"listen_musiclist_on.png", "comment":"首页-我的歌单图标"},
+	{"key":"listen_download","image":"listen_download.png","highlighted_image":"listen_download_on.png", "comment":"首页-下载管理图标"},
+	{"key":"listen_recent_play","image":"listen_recent_play.png","highlighted_image":"listen_recent_play_on.png", "comment":"首页-最近播放图标"},
+	{"key":"listen_library","image":"listen_library.png","highlighted_image":"listen_library_on.png", "comment":"首页-乐库图标"},
+	{"key":"listen_radio","image":"listen_radio.png","highlighted_image":"listen_radio_on.png", "comment":"首页-电台图标"},
+	{"key":"listen_group","image":"listen_group.png","highlighted_image":"listen_group_on.png", "comment":"首页-酷群图标"},
+    {"key":"listen_fx_avatar","image":"listen_fx_avatar.png","comment":"首页-关注主播图标"},
+	{"key":"listen_tools","image":"listen_tools.png", "comment":"首页-音乐工具图标"},
+	{"key":"listen_game","image":"listen_game.png", "comment":"首页-游戏图标"},
+	{"key":"listen_hardware","image":"listen_hardware.png", "comment":"首页-硬件图标"},
+    {"key":"listen_fx","image":"listen_fx.png", "comment":"首页-直播图标"},
+	{"key":"listen_act","image":"listen_act.png", "comment":"首页-活动图标"},
+	{"key":"listen_digitalbum","image":"listen_digitalbum.png","comment":"首页-数字专辑"},
+	{"key":"listen_feedback","image":"listen_feedback.png", "comment":"首页-意见反馈"},
+    {"key":"listen_local_play","image":"listen_local_play.png","highlighted_image":"listen_local_play_on.png", "comment":"首页随机播放按钮"},
+
+	{"key":"bg_content","image":"bg_content.png","comment":"首页-内容区域背景图片"},
+	{"key":"bg_blurcontent","image":"bg_blurcontent.png","comment":"底部弹窗毛玻璃"},
+	{"key":"bg_sidebar","image":"bg_sidebar.png","comment":"侧边栏-背景图片"},
+
+	{"key":"playbar_headimage_default","image":"playbar_headimage_default.png","comment":"公共模块-播放bar条歌手默认图"},
+	{"key":"playbar_bg","image":"playbar_bg.png","comment":"公共模块-播放bar条背景图片"},
+	{"key":"bg_playview","image":"bg_content.png","comment":"播放页背景"},
+	{"key":"playbar_play","image":"playbar_play.png", "highlighted_image":"playbar_play_on.png","comment":"播放bar播放按钮"},
+	{"key":"playbar_pause","image":"playbar_pause.png", "highlighted_image":"playbar_pause_on.png","comment":"播放bar暂停按钮"},
+	{"key":"playbar_next","image":"playbar_next.png", "highlighted_image":"playbar_next_on.png","comment":"播放bar暂停按钮"},
+	
+	{"key":"playbar_yuekulist","image":"playbar_yuekulist.png", "highlighted_image":"playbar_yuekulist_on.png","comment":"播放bar列表(乐库)"},
+	{"key":"home_listen_bg_one","image":"home_listen_bg_one.png","comment":"首页我喜欢与本地音乐背后的模糊背景"},
+	{"key":"listen_separation_line","image":"listen_separation_line.png","comment":"首页第一排大图标与本地音乐之间的分割线"},
+
+	{"key":"watch_mv","image":"watch_mv.png","comment":"看-MV"},
+    {"key":"watch_home_follow_tabbtn","image":"watch_home_follow_tabbtn.png","highlighted_image":"watch_home_follow_tabbtn_on.png","comment":"看-关注"},
+	{"key":"watch_kugou_live","image":"watch_kugou_live.png","comment":"看-酷狗LIVE"},
+	{"key":"watch_star_interview","image":"watch_star_interview.png","comment":"看-明星访谈"},
+	{"key":"watch_artist_live","image":"watch_artist_live.png","comment":"看-繁星直播"},
+    {"key":"watch_home_mobile_live","image":"watch_home_mobile_live.png","comment":"看-手机直播"},
+	{"key":"watch_kugou_offlineshow","image":"watch_kugou_offlineshow.png","comment":"看-线下演出"},
+
+	{"key":"ktv_friendsnewest","image":"ktv_friendsnewest.png","highlighted_image":"ktv_friendsnewest_on.png","comment":"唱-好友"},
+	{"key":"ktv_ksong","image":"ktv_ksong.png","highlighted_image":"ktv_ksong_on.png","comment":"唱-我要唱"},
+    {"key":"ktv_match","image":"ktv_match.png","highlighted_image":"ktv_match_on.png","comment":"唱-去PK"},
+    {"key":"ktv_judge","image":"ktv_judge.png","highlighted_image":"ktv_judge_on.png","comment":"唱-做评委"},
+	{"key":"ktv_mine","image":"ktv_mine.png","highlighted_image":"ktv_mine_on.png","comment":"唱-我的"},
+	{"key":"ktv_nearlbs","image":"ktv_nearlbs.png","highlighted_image":"ktv_nearlbs_on.png","comment":"唱-附近"},
+	{"key":"ktv_citylbs","image":"ktv_citylbs.png","highlighted_image":"ktv_citylbs_on.png","comment":"唱-排行"},
+	{"key":"ktv_advert","image":"ktv_advert.png","comment":"唱-推广"},
+	{"key":"ktv_megagame","image":"ktv_megagame.png","comment":"唱-大赛"}
+	],
+
+
+"colorType":
+	[
+	{"key":"nt","color":"#ffffff"},
+	{"key":"st","color":"#ffffff","alpha":"0.8"},
+	{"key":"pnt","color":"#ffffff"},
+	{"key":"ht","color":"#ffedd0"},
+	{"key":"line","color":"#ffffff","alpha":"0.26"},
+	{"key":"bold_line","color":"#ffffff","alpha":"0.14"},
+	{"key":"cc","color":"#e3d1b1"},
+	{"key":"be","color":"#ffffff"},
+	{"key":"title","color":"#b39259"},
+	{"key":"tab","color":"#bfa373"},
+	{"key":"pb","color":"#ffe38f"},
+	{"key":"mbs","color":"#ffffff","alpha":"0.04"},
+	{"key":"mb","color":"#ffffff","alpha":"0.1"},
+    {"key":"lb","color":"#000000","alpha":"0.2"},
+    {"key":"lc","color":"#ffffff"},
+    {"key":"pc","color":"#ebb471"},
+    {"key":"ml","color":"#332718","alpha":"0.6"}
+	],
+
+
+"boolType":
+	[
+	{"key":"sa","boolvalue":"1"},
+	{"key":"sb","boolvalue":"1"},
+	{"key":"sc","boolvalue":"1"},
+	{"key":"sd","boolvalue":"1"},
+	{"key":"small_bg","boolvalue":"0"},
+	{"key":"loading_style","boolvalue":"1","comment":"用于控制酷小狗动画的选型,当1时,使用有颜色的酷小狗,当0时,使用线条酷小狗"},
+	{"key":"deep_switchview","boolvalue":"1","comment":"开关按钮是否为深色"}
+	],
+
+"floatType":
+    	[
+    	{"key":"groupchat_head_alpha","floatvalue":"0.3"}
+    	]
+
+
+}
+

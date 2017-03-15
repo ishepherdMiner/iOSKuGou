@@ -1,0 +1,815 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		68BC8F56562B9FBD7CA3F962 /* libPods-iOSKugou.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 097DF49757A6A788CBEB2146 /* libPods-iOSKugou.a */; };
+		96A511511E793406003FACAF /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 96A511501E793406003FACAF /* main.m */; };
+		96A511541E793406003FACAF /* KGAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 96A511531E793406003FACAF /* KGAppDelegate.m */; };
+		96A5115C1E793406003FACAF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 96A5115B1E793406003FACAF /* Assets.xcassets */; };
+		96A5115F1E793406003FACAF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 96A5115D1E793406003FACAF /* LaunchScreen.storyboard */; };
+		96A5116A1E793406003FACAF /* iOSKugouTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 96A511691E793406003FACAF /* iOSKugouTests.m */; };
+		96A5117A1E7934EC003FACAF /* KGHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 96A511791E7934EC003FACAF /* KGHomeViewController.m */; };
+		96A511951E793CDC003FACAF /* NSArray+JACoder.m in Sources */ = {isa = PBXBuildFile; fileRef = 96A5117F1E793CDC003FACAF /* NSArray+JACoder.m */; };
+		96A511961E793CDC003FACAF /* NSDate+JACoder.m in Sources */ = {isa = PBXBuildFile; fileRef = 96A511811E793CDC003FACAF /* NSDate+JACoder.m */; };
+		96A511971E793CDC003FACAF /* NSDictionary+JACoder.m in Sources */ = {isa = PBXBuildFile; fileRef = 96A511831E793CDC003FACAF /* NSDictionary+JACoder.m */; };
+		96A511981E793CDC003FACAF /* NSObject+JACoder.m in Sources */ = {isa = PBXBuildFile; fileRef = 96A511851E793CDC003FACAF /* NSObject+JACoder.m */; };
+		96A511991E793CDC003FACAF /* NSString+JACoder.m in Sources */ = {isa = PBXBuildFile; fileRef = 96A511871E793CDC003FACAF /* NSString+JACoder.m */; };
+		96A5119A1E793CDC003FACAF /* UIDevice+JACoder.m in Sources */ = {isa = PBXBuildFile; fileRef = 96A511891E793CDC003FACAF /* UIDevice+JACoder.m */; };
+		96A5119B1E793CDC003FACAF /* UIImage+JACoder.m in Sources */ = {isa = PBXBuildFile; fileRef = 96A5118B1E793CDC003FACAF /* UIImage+JACoder.m */; };
+		96A5119C1E793CDC003FACAF /* UIView+JACoder.m in Sources */ = {isa = PBXBuildFile; fileRef = 96A5118D1E793CDC003FACAF /* UIView+JACoder.m */; };
+		96A5119D1E793CDC003FACAF /* JATimerCenter.m in Sources */ = {isa = PBXBuildFile; fileRef = 96A511901E793CDC003FACAF /* JATimerCenter.m */; };
+		96A5119E1E793CDC003FACAF /* JATimerProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = 96A511921E793CDC003FACAF /* JATimerProvider.m */; };
+		96A5119F1E793CDC003FACAF /* JAUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 96A511941E793CDC003FACAF /* JAUtils.m */; };
+		96A511A31E794585003FACAF /* defaultTheme.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 96A511A21E794585003FACAF /* defaultTheme.bundle */; };
+		96A511AF1E794B51003FACAF /* customTheme_Base.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 96A511A41E794B51003FACAF /* customTheme_Base.bundle */; };
+		96A511B01E794B51003FACAF /* customTheme_Blue.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 96A511A51E794B51003FACAF /* customTheme_Blue.bundle */; };
+		96A511B11E794B51003FACAF /* customTheme_Coffee.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 96A511A61E794B51003FACAF /* customTheme_Coffee.bundle */; };
+		96A511B21E794B51003FACAF /* customTheme_Cyans.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 96A511A71E794B51003FACAF /* customTheme_Cyans.bundle */; };
+		96A511B31E794B51003FACAF /* customTheme_Gray.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 96A511A81E794B51003FACAF /* customTheme_Gray.bundle */; };
+		96A511B41E794B51003FACAF /* customTheme_Green.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 96A511A91E794B51003FACAF /* customTheme_Green.bundle */; };
+		96A511B51E794B51003FACAF /* customTheme_Orange.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 96A511AA1E794B51003FACAF /* customTheme_Orange.bundle */; };
+		96A511B61E794B51003FACAF /* customTheme_Pink.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 96A511AB1E794B51003FACAF /* customTheme_Pink.bundle */; };
+		96A511B71E794B51003FACAF /* customTheme_Purple.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 96A511AC1E794B51003FACAF /* customTheme_Purple.bundle */; };
+		96A511B81E794B51003FACAF /* customTheme_Red.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 96A511AD1E794B51003FACAF /* customTheme_Red.bundle */; };
+		96A511B91E794B51003FACAF /* customTheme_Yellow.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 96A511AE1E794B51003FACAF /* customTheme_Yellow.bundle */; };
+		96A511BF1E796AC2003FACAF /* LaunchImage-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 96A511BA1E796AC2003FACAF /* LaunchImage-568h@2x.png */; };
+		96A511C01E796AC2003FACAF /* LaunchImage-700@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 96A511BB1E796AC2003FACAF /* LaunchImage-700@2x.png */; };
+		96A511C11E796AC2003FACAF /* LaunchImage-800-667h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 96A511BC1E796AC2003FACAF /* LaunchImage-800-667h@2x.png */; };
+		96A511C21E796AC2003FACAF /* LaunchImage-800-Portrait-736h@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 96A511BD1E796AC2003FACAF /* LaunchImage-800-Portrait-736h@3x.png */; };
+		96A511C31E796AC2003FACAF /* LaunchImage@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 96A511BE1E796AC2003FACAF /* LaunchImage@2x.png */; };
+		96A511C81E797140003FACAF /* KGBaseNavController.m in Sources */ = {isa = PBXBuildFile; fileRef = 96A511C71E797140003FACAF /* KGBaseNavController.m */; };
+		96A511CA1E7984AE003FACAF /* classic.wav in Resources */ = {isa = PBXBuildFile; fileRef = 96A511C91E7984AE003FACAF /* classic.wav */; };
+		96A511CE1E7985D4003FACAF /* KGHelloKugou.m in Sources */ = {isa = PBXBuildFile; fileRef = 96A511CD1E7985D4003FACAF /* KGHelloKugou.m */; };
+		96A511D11E798825003FACAF /* KGConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 96A511D01E798825003FACAF /* KGConfig.m */; };
+		F308DAF5F33A3C7FE60A88C3 /* libPods-iOSKugouTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DC6B5E00BFFB43C794C8B551 /* libPods-iOSKugouTests.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		96A511661E793406003FACAF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 96A511441E793406003FACAF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 96A5114B1E793406003FACAF;
+			remoteInfo = iOSKugou;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		097DF49757A6A788CBEB2146 /* libPods-iOSKugou.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-iOSKugou.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		307FAF95428D2511438031EA /* Pods-iOSKugou.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOSKugou.debug.xcconfig"; path = "Pods/Target Support Files/Pods-iOSKugou/Pods-iOSKugou.debug.xcconfig"; sourceTree = "<group>"; };
+		96A5114C1E793406003FACAF /* iOSKugou.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iOSKugou.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		96A511501E793406003FACAF /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		96A511521E793406003FACAF /* KGAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = KGAppDelegate.h; path = ../KGAppDelegate.h; sourceTree = "<group>"; };
+		96A511531E793406003FACAF /* KGAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = KGAppDelegate.m; path = ../KGAppDelegate.m; sourceTree = "<group>"; };
+		96A5115B1E793406003FACAF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		96A5115E1E793406003FACAF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		96A511601E793406003FACAF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		96A511651E793406003FACAF /* iOSKugouTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = iOSKugouTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		96A511691E793406003FACAF /* iOSKugouTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = iOSKugouTests.m; sourceTree = "<group>"; };
+		96A5116B1E793406003FACAF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		96A511781E7934EC003FACAF /* KGHomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KGHomeViewController.h; sourceTree = "<group>"; };
+		96A511791E7934EC003FACAF /* KGHomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KGHomeViewController.m; sourceTree = "<group>"; };
+		96A5117B1E79358F003FACAF /* iOSKugou.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = iOSKugou.entitlements; sourceTree = "<group>"; };
+		96A5117C1E793675003FACAF /* KGMarcro.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KGMarcro.h; sourceTree = "<group>"; };
+		96A5117E1E793CDC003FACAF /* NSArray+JACoder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+JACoder.h"; sourceTree = "<group>"; };
+		96A5117F1E793CDC003FACAF /* NSArray+JACoder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+JACoder.m"; sourceTree = "<group>"; };
+		96A511801E793CDC003FACAF /* NSDate+JACoder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+JACoder.h"; sourceTree = "<group>"; };
+		96A511811E793CDC003FACAF /* NSDate+JACoder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+JACoder.m"; sourceTree = "<group>"; };
+		96A511821E793CDC003FACAF /* NSDictionary+JACoder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+JACoder.h"; sourceTree = "<group>"; };
+		96A511831E793CDC003FACAF /* NSDictionary+JACoder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+JACoder.m"; sourceTree = "<group>"; };
+		96A511841E793CDC003FACAF /* NSObject+JACoder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+JACoder.h"; sourceTree = "<group>"; };
+		96A511851E793CDC003FACAF /* NSObject+JACoder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+JACoder.m"; sourceTree = "<group>"; };
+		96A511861E793CDC003FACAF /* NSString+JACoder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+JACoder.h"; sourceTree = "<group>"; };
+		96A511871E793CDC003FACAF /* NSString+JACoder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+JACoder.m"; sourceTree = "<group>"; };
+		96A511881E793CDC003FACAF /* UIDevice+JACoder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIDevice+JACoder.h"; sourceTree = "<group>"; };
+		96A511891E793CDC003FACAF /* UIDevice+JACoder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIDevice+JACoder.m"; sourceTree = "<group>"; };
+		96A5118A1E793CDC003FACAF /* UIImage+JACoder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+JACoder.h"; sourceTree = "<group>"; };
+		96A5118B1E793CDC003FACAF /* UIImage+JACoder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+JACoder.m"; sourceTree = "<group>"; };
+		96A5118C1E793CDC003FACAF /* UIView+JACoder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+JACoder.h"; sourceTree = "<group>"; };
+		96A5118D1E793CDC003FACAF /* UIView+JACoder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+JACoder.m"; sourceTree = "<group>"; };
+		96A5118F1E793CDC003FACAF /* JATimerCenter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JATimerCenter.h; sourceTree = "<group>"; };
+		96A511901E793CDC003FACAF /* JATimerCenter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JATimerCenter.m; sourceTree = "<group>"; };
+		96A511911E793CDC003FACAF /* JATimerProvider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JATimerProvider.h; sourceTree = "<group>"; };
+		96A511921E793CDC003FACAF /* JATimerProvider.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JATimerProvider.m; sourceTree = "<group>"; };
+		96A511931E793CDC003FACAF /* JAUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JAUtils.h; sourceTree = "<group>"; };
+		96A511941E793CDC003FACAF /* JAUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JAUtils.m; sourceTree = "<group>"; };
+		96A511A01E793ED2003FACAF /* KGPchHeader.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KGPchHeader.pch; sourceTree = "<group>"; };
+		96A511A21E794585003FACAF /* defaultTheme.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = defaultTheme.bundle; sourceTree = "<group>"; };
+		96A511A41E794B51003FACAF /* customTheme_Base.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = customTheme_Base.bundle; sourceTree = "<group>"; };
+		96A511A51E794B51003FACAF /* customTheme_Blue.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = customTheme_Blue.bundle; sourceTree = "<group>"; };
+		96A511A61E794B51003FACAF /* customTheme_Coffee.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = customTheme_Coffee.bundle; sourceTree = "<group>"; };
+		96A511A71E794B51003FACAF /* customTheme_Cyans.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = customTheme_Cyans.bundle; sourceTree = "<group>"; };
+		96A511A81E794B51003FACAF /* customTheme_Gray.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = customTheme_Gray.bundle; sourceTree = "<group>"; };
+		96A511A91E794B51003FACAF /* customTheme_Green.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = customTheme_Green.bundle; sourceTree = "<group>"; };
+		96A511AA1E794B51003FACAF /* customTheme_Orange.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = customTheme_Orange.bundle; sourceTree = "<group>"; };
+		96A511AB1E794B51003FACAF /* customTheme_Pink.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = customTheme_Pink.bundle; sourceTree = "<group>"; };
+		96A511AC1E794B51003FACAF /* customTheme_Purple.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = customTheme_Purple.bundle; sourceTree = "<group>"; };
+		96A511AD1E794B51003FACAF /* customTheme_Red.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = customTheme_Red.bundle; sourceTree = "<group>"; };
+		96A511AE1E794B51003FACAF /* customTheme_Yellow.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = customTheme_Yellow.bundle; sourceTree = "<group>"; };
+		96A511BA1E796AC2003FACAF /* LaunchImage-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "LaunchImage-568h@2x.png"; path = "Classes/LaunchImage-568h@2x.png"; sourceTree = "<group>"; };
+		96A511BB1E796AC2003FACAF /* LaunchImage-700@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "LaunchImage-700@2x.png"; path = "Classes/LaunchImage-700@2x.png"; sourceTree = "<group>"; };
+		96A511BC1E796AC2003FACAF /* LaunchImage-800-667h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "LaunchImage-800-667h@2x.png"; path = "Classes/LaunchImage-800-667h@2x.png"; sourceTree = "<group>"; };
+		96A511BD1E796AC2003FACAF /* LaunchImage-800-Portrait-736h@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "LaunchImage-800-Portrait-736h@3x.png"; path = "Classes/LaunchImage-800-Portrait-736h@3x.png"; sourceTree = "<group>"; };
+		96A511BE1E796AC2003FACAF /* LaunchImage@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "LaunchImage@2x.png"; path = "Classes/LaunchImage@2x.png"; sourceTree = "<group>"; };
+		96A511C61E797140003FACAF /* KGBaseNavController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KGBaseNavController.h; sourceTree = "<group>"; };
+		96A511C71E797140003FACAF /* KGBaseNavController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KGBaseNavController.m; sourceTree = "<group>"; };
+		96A511C91E7984AE003FACAF /* classic.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = classic.wav; path = ../classic.wav; sourceTree = "<group>"; };
+		96A511CC1E7985D4003FACAF /* KGHelloKugou.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KGHelloKugou.h; sourceTree = "<group>"; };
+		96A511CD1E7985D4003FACAF /* KGHelloKugou.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KGHelloKugou.m; sourceTree = "<group>"; };
+		96A511CF1E798825003FACAF /* KGConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KGConfig.h; sourceTree = "<group>"; };
+		96A511D01E798825003FACAF /* KGConfig.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KGConfig.m; sourceTree = "<group>"; };
+		98EA256534891C09452AA4E6 /* Pods-iOSKugouTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOSKugouTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-iOSKugouTests/Pods-iOSKugouTests.debug.xcconfig"; sourceTree = "<group>"; };
+		B76DD3CDE2DBABF3014A8360 /* Pods-iOSKugouTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOSKugouTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-iOSKugouTests/Pods-iOSKugouTests.release.xcconfig"; sourceTree = "<group>"; };
+		DC6B5E00BFFB43C794C8B551 /* libPods-iOSKugouTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-iOSKugouTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E2BC4F19718810FD30A4C52E /* Pods-iOSKugou.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOSKugou.release.xcconfig"; path = "Pods/Target Support Files/Pods-iOSKugou/Pods-iOSKugou.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		96A511491E793406003FACAF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				68BC8F56562B9FBD7CA3F962 /* libPods-iOSKugou.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		96A511621E793406003FACAF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F308DAF5F33A3C7FE60A88C3 /* libPods-iOSKugouTests.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		7B2976A270C4B3105DD74344 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				097DF49757A6A788CBEB2146 /* libPods-iOSKugou.a */,
+				DC6B5E00BFFB43C794C8B551 /* libPods-iOSKugouTests.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		96A511431E793406003FACAF = {
+			isa = PBXGroup;
+			children = (
+				96A5114E1E793406003FACAF /* iOSKugou */,
+				96A511681E793406003FACAF /* iOSKugouTests */,
+				96A5114D1E793406003FACAF /* Products */,
+				FB961B6A39D370B9C8C1D5CC /* Pods */,
+				7B2976A270C4B3105DD74344 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		96A5114D1E793406003FACAF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				96A5114C1E793406003FACAF /* iOSKugou.app */,
+				96A511651E793406003FACAF /* iOSKugouTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		96A5114E1E793406003FACAF /* iOSKugou */ = {
+			isa = PBXGroup;
+			children = (
+				96A5117B1E79358F003FACAF /* iOSKugou.entitlements */,
+				96A511741E793477003FACAF /* Classes */,
+				96A5114F1E793406003FACAF /* Supporting Files */,
+			);
+			path = iOSKugou;
+			sourceTree = "<group>";
+		};
+		96A5114F1E793406003FACAF /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				96A511501E793406003FACAF /* main.m */,
+				96A5115B1E793406003FACAF /* Assets.xcassets */,
+				96A511BA1E796AC2003FACAF /* LaunchImage-568h@2x.png */,
+				96A511BB1E796AC2003FACAF /* LaunchImage-700@2x.png */,
+				96A511BC1E796AC2003FACAF /* LaunchImage-800-667h@2x.png */,
+				96A511BD1E796AC2003FACAF /* LaunchImage-800-Portrait-736h@3x.png */,
+				96A511BE1E796AC2003FACAF /* LaunchImage@2x.png */,
+				96A5115D1E793406003FACAF /* LaunchScreen.storyboard */,
+				96A511601E793406003FACAF /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		96A511681E793406003FACAF /* iOSKugouTests */ = {
+			isa = PBXGroup;
+			children = (
+				96A511691E793406003FACAF /* iOSKugouTests.m */,
+				96A5116B1E793406003FACAF /* Info.plist */,
+			);
+			path = iOSKugouTests;
+			sourceTree = "<group>";
+		};
+		96A511741E793477003FACAF /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				96A511A11E794579003FACAF /* Themes */,
+				96A511771E7934B1003FACAF /* Foundation */,
+				96A511761E7934A9003FACAF /* Modules */,
+				96A511751E793493003FACAF /* Framework */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		96A511751E793493003FACAF /* Framework */ = {
+			isa = PBXGroup;
+			children = (
+				96A511C51E79710C003FACAF /* Base */,
+				96A511521E793406003FACAF /* KGAppDelegate.h */,
+				96A511531E793406003FACAF /* KGAppDelegate.m */,
+				96A5117C1E793675003FACAF /* KGMarcro.h */,
+				96A511A01E793ED2003FACAF /* KGPchHeader.pch */,
+				96A511CF1E798825003FACAF /* KGConfig.h */,
+				96A511D01E798825003FACAF /* KGConfig.m */,
+			);
+			name = Framework;
+			sourceTree = "<group>";
+		};
+		96A511761E7934A9003FACAF /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				96A511CB1E79859A003FACAF /* HelloKuGou */,
+				96A511C41E796BA2003FACAF /* HomeViewController */,
+			);
+			name = Modules;
+			sourceTree = "<group>";
+		};
+		96A511771E7934B1003FACAF /* Foundation */ = {
+			isa = PBXGroup;
+			children = (
+				96A5117D1E793CDC003FACAF /* Category */,
+				96A5118E1E793CDC003FACAF /* Utils */,
+			);
+			name = Foundation;
+			sourceTree = "<group>";
+		};
+		96A5117D1E793CDC003FACAF /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				96A5117E1E793CDC003FACAF /* NSArray+JACoder.h */,
+				96A5117F1E793CDC003FACAF /* NSArray+JACoder.m */,
+				96A511801E793CDC003FACAF /* NSDate+JACoder.h */,
+				96A511811E793CDC003FACAF /* NSDate+JACoder.m */,
+				96A511821E793CDC003FACAF /* NSDictionary+JACoder.h */,
+				96A511831E793CDC003FACAF /* NSDictionary+JACoder.m */,
+				96A511841E793CDC003FACAF /* NSObject+JACoder.h */,
+				96A511851E793CDC003FACAF /* NSObject+JACoder.m */,
+				96A511861E793CDC003FACAF /* NSString+JACoder.h */,
+				96A511871E793CDC003FACAF /* NSString+JACoder.m */,
+				96A511881E793CDC003FACAF /* UIDevice+JACoder.h */,
+				96A511891E793CDC003FACAF /* UIDevice+JACoder.m */,
+				96A5118A1E793CDC003FACAF /* UIImage+JACoder.h */,
+				96A5118B1E793CDC003FACAF /* UIImage+JACoder.m */,
+				96A5118C1E793CDC003FACAF /* UIView+JACoder.h */,
+				96A5118D1E793CDC003FACAF /* UIView+JACoder.m */,
+			);
+			path = Category;
+			sourceTree = "<group>";
+		};
+		96A5118E1E793CDC003FACAF /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				96A5118F1E793CDC003FACAF /* JATimerCenter.h */,
+				96A511901E793CDC003FACAF /* JATimerCenter.m */,
+				96A511911E793CDC003FACAF /* JATimerProvider.h */,
+				96A511921E793CDC003FACAF /* JATimerProvider.m */,
+				96A511931E793CDC003FACAF /* JAUtils.h */,
+				96A511941E793CDC003FACAF /* JAUtils.m */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		96A511A11E794579003FACAF /* Themes */ = {
+			isa = PBXGroup;
+			children = (
+				96A511A41E794B51003FACAF /* customTheme_Base.bundle */,
+				96A511A51E794B51003FACAF /* customTheme_Blue.bundle */,
+				96A511A61E794B51003FACAF /* customTheme_Coffee.bundle */,
+				96A511A71E794B51003FACAF /* customTheme_Cyans.bundle */,
+				96A511A81E794B51003FACAF /* customTheme_Gray.bundle */,
+				96A511A91E794B51003FACAF /* customTheme_Green.bundle */,
+				96A511AA1E794B51003FACAF /* customTheme_Orange.bundle */,
+				96A511AB1E794B51003FACAF /* customTheme_Pink.bundle */,
+				96A511AC1E794B51003FACAF /* customTheme_Purple.bundle */,
+				96A511AD1E794B51003FACAF /* customTheme_Red.bundle */,
+				96A511AE1E794B51003FACAF /* customTheme_Yellow.bundle */,
+				96A511A21E794585003FACAF /* defaultTheme.bundle */,
+			);
+			name = Themes;
+			sourceTree = "<group>";
+		};
+		96A511C41E796BA2003FACAF /* HomeViewController */ = {
+			isa = PBXGroup;
+			children = (
+				96A511781E7934EC003FACAF /* KGHomeViewController.h */,
+				96A511791E7934EC003FACAF /* KGHomeViewController.m */,
+			);
+			name = HomeViewController;
+			sourceTree = "<group>";
+		};
+		96A511C51E79710C003FACAF /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				96A511C61E797140003FACAF /* KGBaseNavController.h */,
+				96A511C71E797140003FACAF /* KGBaseNavController.m */,
+			);
+			name = Base;
+			sourceTree = "<group>";
+		};
+		96A511CB1E79859A003FACAF /* HelloKuGou */ = {
+			isa = PBXGroup;
+			children = (
+				96A511CC1E7985D4003FACAF /* KGHelloKugou.h */,
+				96A511CD1E7985D4003FACAF /* KGHelloKugou.m */,
+				96A511C91E7984AE003FACAF /* classic.wav */,
+			);
+			name = HelloKuGou;
+			sourceTree = "<group>";
+		};
+		FB961B6A39D370B9C8C1D5CC /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				307FAF95428D2511438031EA /* Pods-iOSKugou.debug.xcconfig */,
+				E2BC4F19718810FD30A4C52E /* Pods-iOSKugou.release.xcconfig */,
+				98EA256534891C09452AA4E6 /* Pods-iOSKugouTests.debug.xcconfig */,
+				B76DD3CDE2DBABF3014A8360 /* Pods-iOSKugouTests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		96A5114B1E793406003FACAF /* iOSKugou */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 96A5116E1E793406003FACAF /* Build configuration list for PBXNativeTarget "iOSKugou" */;
+			buildPhases = (
+				D5E3EC130D2F4CB88A4860F0 /* [CP] Check Pods Manifest.lock */,
+				96A511481E793406003FACAF /* Sources */,
+				96A511491E793406003FACAF /* Frameworks */,
+				96A5114A1E793406003FACAF /* Resources */,
+				0F8BC58FD289734117E216E7 /* [CP] Embed Pods Frameworks */,
+				008F2342330C8A2BE9467E02 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = iOSKugou;
+			productName = iOSKugou;
+			productReference = 96A5114C1E793406003FACAF /* iOSKugou.app */;
+			productType = "com.apple.product-type.application";
+		};
+		96A511641E793406003FACAF /* iOSKugouTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 96A511711E793406003FACAF /* Build configuration list for PBXNativeTarget "iOSKugouTests" */;
+			buildPhases = (
+				8DB21314DF2A2C6BE6800B93 /* [CP] Check Pods Manifest.lock */,
+				96A511611E793406003FACAF /* Sources */,
+				96A511621E793406003FACAF /* Frameworks */,
+				96A511631E793406003FACAF /* Resources */,
+				9EBA4CCA8F55DD7B6C4539D7 /* [CP] Embed Pods Frameworks */,
+				47FDF18DFB3870C1B2020503 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				96A511671E793406003FACAF /* PBXTargetDependency */,
+			);
+			name = iOSKugouTests;
+			productName = iOSKugouTests;
+			productReference = 96A511651E793406003FACAF /* iOSKugouTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		96A511441E793406003FACAF /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = KG;
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = Jason;
+				TargetAttributes = {
+					96A5114B1E793406003FACAF = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = ZEY359R7A4;
+						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+							com.apple.Push = {
+								enabled = 1;
+							};
+						};
+					};
+					96A511641E793406003FACAF = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = ZEY359R7A4;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 96A5114B1E793406003FACAF;
+					};
+				};
+			};
+			buildConfigurationList = 96A511471E793406003FACAF /* Build configuration list for PBXProject "iOSKugou" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 96A511431E793406003FACAF;
+			productRefGroup = 96A5114D1E793406003FACAF /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				96A5114B1E793406003FACAF /* iOSKugou */,
+				96A511641E793406003FACAF /* iOSKugouTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		96A5114A1E793406003FACAF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				96A5115F1E793406003FACAF /* LaunchScreen.storyboard in Resources */,
+				96A511CA1E7984AE003FACAF /* classic.wav in Resources */,
+				96A5115C1E793406003FACAF /* Assets.xcassets in Resources */,
+				96A511B71E794B51003FACAF /* customTheme_Purple.bundle in Resources */,
+				96A511B61E794B51003FACAF /* customTheme_Pink.bundle in Resources */,
+				96A511B81E794B51003FACAF /* customTheme_Red.bundle in Resources */,
+				96A511C01E796AC2003FACAF /* LaunchImage-700@2x.png in Resources */,
+				96A511B11E794B51003FACAF /* customTheme_Coffee.bundle in Resources */,
+				96A511C31E796AC2003FACAF /* LaunchImage@2x.png in Resources */,
+				96A511B41E794B51003FACAF /* customTheme_Green.bundle in Resources */,
+				96A511BF1E796AC2003FACAF /* LaunchImage-568h@2x.png in Resources */,
+				96A511A31E794585003FACAF /* defaultTheme.bundle in Resources */,
+				96A511C21E796AC2003FACAF /* LaunchImage-800-Portrait-736h@3x.png in Resources */,
+				96A511B01E794B51003FACAF /* customTheme_Blue.bundle in Resources */,
+				96A511B51E794B51003FACAF /* customTheme_Orange.bundle in Resources */,
+				96A511B21E794B51003FACAF /* customTheme_Cyans.bundle in Resources */,
+				96A511AF1E794B51003FACAF /* customTheme_Base.bundle in Resources */,
+				96A511B91E794B51003FACAF /* customTheme_Yellow.bundle in Resources */,
+				96A511C11E796AC2003FACAF /* LaunchImage-800-667h@2x.png in Resources */,
+				96A511B31E794B51003FACAF /* customTheme_Gray.bundle in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		96A511631E793406003FACAF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		008F2342330C8A2BE9467E02 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-iOSKugou/Pods-iOSKugou-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		0F8BC58FD289734117E216E7 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-iOSKugou/Pods-iOSKugou-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		47FDF18DFB3870C1B2020503 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-iOSKugouTests/Pods-iOSKugouTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8DB21314DF2A2C6BE6800B93 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		9EBA4CCA8F55DD7B6C4539D7 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-iOSKugouTests/Pods-iOSKugouTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D5E3EC130D2F4CB88A4860F0 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		96A511481E793406003FACAF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				96A511991E793CDC003FACAF /* NSString+JACoder.m in Sources */,
+				96A511981E793CDC003FACAF /* NSObject+JACoder.m in Sources */,
+				96A5119F1E793CDC003FACAF /* JAUtils.m in Sources */,
+				96A5119B1E793CDC003FACAF /* UIImage+JACoder.m in Sources */,
+				96A511541E793406003FACAF /* KGAppDelegate.m in Sources */,
+				96A511971E793CDC003FACAF /* NSDictionary+JACoder.m in Sources */,
+				96A511511E793406003FACAF /* main.m in Sources */,
+				96A5119A1E793CDC003FACAF /* UIDevice+JACoder.m in Sources */,
+				96A5119D1E793CDC003FACAF /* JATimerCenter.m in Sources */,
+				96A511961E793CDC003FACAF /* NSDate+JACoder.m in Sources */,
+				96A511CE1E7985D4003FACAF /* KGHelloKugou.m in Sources */,
+				96A5119C1E793CDC003FACAF /* UIView+JACoder.m in Sources */,
+				96A5117A1E7934EC003FACAF /* KGHomeViewController.m in Sources */,
+				96A511951E793CDC003FACAF /* NSArray+JACoder.m in Sources */,
+				96A5119E1E793CDC003FACAF /* JATimerProvider.m in Sources */,
+				96A511D11E798825003FACAF /* KGConfig.m in Sources */,
+				96A511C81E797140003FACAF /* KGBaseNavController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		96A511611E793406003FACAF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				96A5116A1E793406003FACAF /* iOSKugouTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		96A511671E793406003FACAF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 96A5114B1E793406003FACAF /* iOSKugou */;
+			targetProxy = 96A511661E793406003FACAF /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		96A5115D1E793406003FACAF /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				96A5115E1E793406003FACAF /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		96A5116C1E793406003FACAF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		96A5116D1E793406003FACAF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		96A5116F1E793406003FACAF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 307FAF95428D2511438031EA /* Pods-iOSKugou.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_ENTITLEMENTS = iOSKugou/iOSKugou.entitlements;
+				DEVELOPMENT_TEAM = ZEY359R7A4;
+				GCC_PREFIX_HEADER = iOSKugou/Classes/KGPchHeader.pch;
+				INFOPLIST_FILE = iOSKugou/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.coder.iOSKugou;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		96A511701E793406003FACAF /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E2BC4F19718810FD30A4C52E /* Pods-iOSKugou.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_ENTITLEMENTS = iOSKugou/iOSKugou.entitlements;
+				DEVELOPMENT_TEAM = ZEY359R7A4;
+				GCC_PREFIX_HEADER = iOSKugou/Classes/KGPchHeader.pch;
+				INFOPLIST_FILE = iOSKugou/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.coder.iOSKugou;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		96A511721E793406003FACAF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 98EA256534891C09452AA4E6 /* Pods-iOSKugouTests.debug.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = ZEY359R7A4;
+				INFOPLIST_FILE = iOSKugouTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.coder.iOSKugouTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/iOSKugou.app/iOSKugou";
+			};
+			name = Debug;
+		};
+		96A511731E793406003FACAF /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B76DD3CDE2DBABF3014A8360 /* Pods-iOSKugouTests.release.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = ZEY359R7A4;
+				INFOPLIST_FILE = iOSKugouTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.coder.iOSKugouTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/iOSKugou.app/iOSKugou";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		96A511471E793406003FACAF /* Build configuration list for PBXProject "iOSKugou" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				96A5116C1E793406003FACAF /* Debug */,
+				96A5116D1E793406003FACAF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		96A5116E1E793406003FACAF /* Build configuration list for PBXNativeTarget "iOSKugou" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				96A5116F1E793406003FACAF /* Debug */,
+				96A511701E793406003FACAF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		96A511711E793406003FACAF /* Build configuration list for PBXNativeTarget "iOSKugouTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				96A511721E793406003FACAF /* Debug */,
+				96A511731E793406003FACAF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 96A511441E793406003FACAF /* Project object */;
+}
