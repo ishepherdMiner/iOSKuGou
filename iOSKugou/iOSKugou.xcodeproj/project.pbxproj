@@ -8,6 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		68BC8F56562B9FBD7CA3F962 /* libPods-iOSKugou.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 097DF49757A6A788CBEB2146 /* libPods-iOSKugou.a */; };
+		96289AC91E7A48DC001DC4E7 /* KGRootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 96289AC81E7A48DC001DC4E7 /* KGRootViewController.m */; };
+		96289ACC1E7A4FC3001DC4E7 /* NSBundle+KGBundle.m in Sources */ = {isa = PBXBuildFile; fileRef = 96289ACB1E7A4FC3001DC4E7 /* NSBundle+KGBundle.m */; };
+		96289AD01E7A57E4001DC4E7 /* KGSidebarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 96289ACF1E7A57E4001DC4E7 /* KGSidebarViewController.m */; };
+		96289AD41E7A5BD4001DC4E7 /* KGHomeNavController.m in Sources */ = {isa = PBXBuildFile; fileRef = 96289AD31E7A5BD4001DC4E7 /* KGHomeNavController.m */; };
 		96A511511E793406003FACAF /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 96A511501E793406003FACAF /* main.m */; };
 		96A511541E793406003FACAF /* KGAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 96A511531E793406003FACAF /* KGAppDelegate.m */; };
 		96A5115C1E793406003FACAF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 96A5115B1E793406003FACAF /* Assets.xcassets */; };
@@ -62,6 +66,15 @@
 /* Begin PBXFileReference section */
 		097DF49757A6A788CBEB2146 /* libPods-iOSKugou.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-iOSKugou.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		307FAF95428D2511438031EA /* Pods-iOSKugou.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOSKugou.debug.xcconfig"; path = "Pods/Target Support Files/Pods-iOSKugou/Pods-iOSKugou.debug.xcconfig"; sourceTree = "<group>"; };
+		96289AC71E7A48DC001DC4E7 /* KGRootViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KGRootViewController.h; sourceTree = "<group>"; };
+		96289AC81E7A48DC001DC4E7 /* KGRootViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KGRootViewController.m; sourceTree = "<group>"; };
+		96289ACA1E7A4FC3001DC4E7 /* NSBundle+KGBundle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSBundle+KGBundle.h"; sourceTree = "<group>"; };
+		96289ACB1E7A4FC3001DC4E7 /* NSBundle+KGBundle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSBundle+KGBundle.m"; sourceTree = "<group>"; };
+		96289ACD1E7A53E7001DC4E7 /* KGCategory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KGCategory.h; sourceTree = "<group>"; };
+		96289ACE1E7A57E4001DC4E7 /* KGSidebarViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KGSidebarViewController.h; sourceTree = "<group>"; };
+		96289ACF1E7A57E4001DC4E7 /* KGSidebarViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KGSidebarViewController.m; sourceTree = "<group>"; };
+		96289AD21E7A5BD4001DC4E7 /* KGHomeNavController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KGHomeNavController.h; sourceTree = "<group>"; };
+		96289AD31E7A5BD4001DC4E7 /* KGHomeNavController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KGHomeNavController.m; sourceTree = "<group>"; };
 		96A5114C1E793406003FACAF /* iOSKugou.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iOSKugou.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		96A511501E793406003FACAF /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		96A511521E793406003FACAF /* KGAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = KGAppDelegate.h; path = ../KGAppDelegate.h; sourceTree = "<group>"; };
@@ -158,6 +171,15 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		96289AD11E7A57E8001DC4E7 /* Sidebar(侧滑) */ = {
+			isa = PBXGroup;
+			children = (
+				96289ACE1E7A57E4001DC4E7 /* KGSidebarViewController.h */,
+				96289ACF1E7A57E4001DC4E7 /* KGSidebarViewController.m */,
+			);
+			name = "Sidebar(侧滑)";
+			sourceTree = "<group>";
+		};
 		96A511431E793406003FACAF = {
 			isa = PBXGroup;
 			children = (
@@ -234,6 +256,8 @@
 				96A511A01E793ED2003FACAF /* KGPchHeader.pch */,
 				96A511CF1E798825003FACAF /* KGConfig.h */,
 				96A511D01E798825003FACAF /* KGConfig.m */,
+				96289AC71E7A48DC001DC4E7 /* KGRootViewController.h */,
+				96289AC81E7A48DC001DC4E7 /* KGRootViewController.m */,
 			);
 			name = Framework;
 			sourceTree = "<group>";
@@ -241,8 +265,9 @@
 		96A511761E7934A9003FACAF /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				96289AD11E7A57E8001DC4E7 /* Sidebar(侧滑) */,
 				96A511CB1E79859A003FACAF /* HelloKuGou */,
-				96A511C41E796BA2003FACAF /* HomeViewController */,
+				96A511C41E796BA2003FACAF /* Home(首页视图) */,
 			);
 			name = Modules;
 			sourceTree = "<group>";
@@ -259,6 +284,7 @@
 		96A5117D1E793CDC003FACAF /* Category */ = {
 			isa = PBXGroup;
 			children = (
+				96289ACD1E7A53E7001DC4E7 /* KGCategory.h */,
 				96A5117E1E793CDC003FACAF /* NSArray+JACoder.h */,
 				96A5117F1E793CDC003FACAF /* NSArray+JACoder.m */,
 				96A511801E793CDC003FACAF /* NSDate+JACoder.h */,
@@ -275,6 +301,8 @@
 				96A5118B1E793CDC003FACAF /* UIImage+JACoder.m */,
 				96A5118C1E793CDC003FACAF /* UIView+JACoder.h */,
 				96A5118D1E793CDC003FACAF /* UIView+JACoder.m */,
+				96289ACA1E7A4FC3001DC4E7 /* NSBundle+KGBundle.h */,
+				96289ACB1E7A4FC3001DC4E7 /* NSBundle+KGBundle.m */,
 			);
 			path = Category;
 			sourceTree = "<group>";
@@ -311,13 +339,15 @@
 			name = Themes;
 			sourceTree = "<group>";
 		};
-		96A511C41E796BA2003FACAF /* HomeViewController */ = {
+		96A511C41E796BA2003FACAF /* Home(首页视图) */ = {
 			isa = PBXGroup;
 			children = (
 				96A511781E7934EC003FACAF /* KGHomeViewController.h */,
 				96A511791E7934EC003FACAF /* KGHomeViewController.m */,
+				96289AD21E7A5BD4001DC4E7 /* KGHomeNavController.h */,
+				96289AD31E7A5BD4001DC4E7 /* KGHomeNavController.m */,
 			);
-			name = HomeViewController;
+			name = "Home(首页视图)";
 			sourceTree = "<group>";
 		};
 		96A511C51E79710C003FACAF /* Base */ = {
@@ -585,10 +615,13 @@
 				96A5119B1E793CDC003FACAF /* UIImage+JACoder.m in Sources */,
 				96A511541E793406003FACAF /* KGAppDelegate.m in Sources */,
 				96A511971E793CDC003FACAF /* NSDictionary+JACoder.m in Sources */,
+				96289ACC1E7A4FC3001DC4E7 /* NSBundle+KGBundle.m in Sources */,
+				96289AC91E7A48DC001DC4E7 /* KGRootViewController.m in Sources */,
 				96A511511E793406003FACAF /* main.m in Sources */,
 				96A5119A1E793CDC003FACAF /* UIDevice+JACoder.m in Sources */,
 				96A5119D1E793CDC003FACAF /* JATimerCenter.m in Sources */,
 				96A511961E793CDC003FACAF /* NSDate+JACoder.m in Sources */,
+				96289AD41E7A5BD4001DC4E7 /* KGHomeNavController.m in Sources */,
 				96A511CE1E7985D4003FACAF /* KGHelloKugou.m in Sources */,
 				96A5119C1E793CDC003FACAF /* UIView+JACoder.m in Sources */,
 				96A5117A1E7934EC003FACAF /* KGHomeViewController.m in Sources */,
@@ -596,6 +629,7 @@
 				96A5119E1E793CDC003FACAF /* JATimerProvider.m in Sources */,
 				96A511D11E798825003FACAF /* KGConfig.m in Sources */,
 				96A511C81E797140003FACAF /* KGBaseNavController.m in Sources */,
+				96289AD01E7A57E4001DC4E7 /* KGSidebarViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -13,6 +13,8 @@
     #import <UIKit/UIKit.h>
 #import "KGMarcro.h"
 #import "KGConfig.h"
+#import "KGCategory.h"
+#import "JAUtils.h"
 
 #endif
 

@@ -9,7 +9,8 @@
 #import "KGAppDelegate.h"
 #import "KGHomeViewController.h"
 #import <MMDrawerController.h>
-#import "KGBaseNavController.h"
+#import "KGHomeNavController.h"
+#import "KGRootViewController.h"
 
 @interface KGAppDelegate ()
 
@@ -20,26 +21,10 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     
     _window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
-    KGBaseNavController *centerVC = [[KGBaseNavController alloc] initWithRootViewController:[[KGHomeViewController alloc] init]];
     
     [self configure];
     
-#warning 侧滑的库要换,不是这个效果
-    // 左边
-    UIViewController *leftNavC = [[UIViewController alloc] init];
-    leftNavC.view.backgroundColor = KGRGBWhite;
-    
-    // 主控制器
-    MMDrawerController *rootVC = [[MMDrawerController alloc]initWithCenterViewController:centerVC leftDrawerViewController:leftNavC];
-    
-    // 设置侧边最大能活过的宽度
-    [rootVC setMaximumLeftDrawerWidth:KGScreenW - 100 animated:true completion:nil];
-    
-    // 设置打开关闭的手势
-    [rootVC setOpenDrawerGestureModeMask:MMOpenDrawerGestureModeAll];
-    [rootVC setCloseDrawerGestureModeMask:MMCloseDrawerGestureModeAll];
-    
-    _window.rootViewController = rootVC;
+    _window.rootViewController = [[KGRootViewController alloc] init];
     _window.backgroundColor = KGRGBWhite;
     [_window makeKeyAndVisible];
     
@@ -54,24 +39,14 @@
 - (void)setNavBarStyle {
     
     UINavigationBar *navBar = [UINavigationBar appearance];
+        
+    NSBundle *b = [KGConfig sharedConfig].curThemeBundle;
     
     /** 设置导航栏背景图片 */
-    NSString *bundlePath = [self getThemeBundlePath];
-    NSBundle *b = [NSBundle bundleWithPath:bundlePath];
-    
-    // 加载成功
     if (b) {
-        NSString *ext = @"jpg";
-        NSString *navBgImgName = [b pathForResource:@"home_top_bg@2x" ofType:ext];
-        if (KGScreenW > 375) {
-            navBgImgName = [b pathForResource:@"home_top_bg@3x" ofType:ext];
-        }
         
-        // 非默认的
-        if (navBgImgName == nil) {
-            ext = @"png";
-            navBgImgName = [b pathForResource:@"home_top_bg@2x" ofType:ext];
-        }
+        NSString *navBgImgName = [b pathForImageResourceWithName:@"home_top_bg"];
+        
         UIImage *navBgImg = [UIImage imageWithContentsOfFile:navBgImgName];
         
         // 确定拉伸的范围,中间0.6部分的拉伸,目前看上去还比较正常
@@ -96,15 +71,6 @@
                            NSForegroundColorAttributeName : KGHexRGB(0xffffff)
                            };
     [navBar setTitleTextAttributes:dict];
-}
-
-- (NSString *)getThemeBundlePath {
-    // 读取文件如果有,则直接使用主题文件,没有则使用默认主题
-    BOOL c = false;
-    if(c) {
-        return [[NSBundle mainBundle] pathForResource:@"customTheme_Red" ofType:@"bundle"];
-    }
-    return [[NSBundle mainBundle] pathForResource:@"defaultTheme" ofType:@"bundle"];
 }
 
 

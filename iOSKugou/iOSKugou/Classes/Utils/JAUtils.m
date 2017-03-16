@@ -98,4 +98,20 @@ const CGFloat statusSuccess = 0;
     return @([flow longLongValue] / 1024.0 / 1024.0).stringValue;
 }
 
++ (NSAttributedString *)matchWithRegex:(NSString *)regex
+                               content:(NSString *)text
+                                 attrs:(NSDictionary *)attrs{
+    
+    NSMutableAttributedString *hogan = [[NSMutableAttributedString alloc] initWithString:text];
+    NSPredicate *pred = [NSPredicate predicateWithFormat:@"SELF MATCHES %@", regex];
+    for (int i = 0; i < text.length; ++i) {
+        NSString *tmp = [text substringWithRange:NSMakeRange(i, 1)];
+        if ([pred evaluateWithObject:tmp]) {
+            [hogan addAttribute:NSForegroundColorAttributeName value:[UIColor redColor] range:NSMakeRange(i, 1)];
+            [hogan addAttributes:attrs range:NSMakeRange(i, 1)];
+        }
+    }
+    return hogan;
+}
+
 @end

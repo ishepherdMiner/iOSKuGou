@@ -18,6 +18,9 @@ UIKIT_EXTERN NSString *KGClassicVoice;
 /// 欢迎声音,默认是经典类型
 @property (nonatomic,copy) NSString *helloVoice;
 
+/// 当前的主题包
+@property (nonatomic,strong) NSBundle *curThemeBundle;
+
 + (instancetype)sharedConfig;
 
 @end

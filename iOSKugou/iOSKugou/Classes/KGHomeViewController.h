@@ -9,5 +9,5 @@
 #import <UIKit/UIKit.h>
 
 @interface KGHomeViewController : UIViewController
-
+@property (nonatomic,strong) UIPanGestureRecognizer *panGesture;
 @end

@@ -35,4 +35,9 @@ typedef NS_ENUM(NSUInteger,FlowDirectionOption){
  *  @return 指定方式的流量使用情况
  */
 + (NSString *)flowUsage:(FlowUsageType)usageType direction:(FlowDirectionOption)directionOption;
+
++ (NSAttributedString *)matchWithRegex:(NSString *)regex
+                               content:(NSString *)text
+                                 attrs:(NSDictionary *)attrs;
+
 @end
