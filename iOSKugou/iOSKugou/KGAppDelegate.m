@@ -8,9 +8,12 @@
 
 #import "KGAppDelegate.h"
 #import "KGHomeViewController.h"
-#import <MMDrawerController.h>
 #import "KGHomeNavController.h"
 #import "KGRootViewController.h"
+
+/*
+ *    * 导航条左侧的酷狗图标颜色不对
+ */
 
 @interface KGAppDelegate ()
 
@@ -39,7 +42,7 @@
 - (void)setNavBarStyle {
     
     UINavigationBar *navBar = [UINavigationBar appearance];
-        
+    
     NSBundle *b = [KGConfig sharedConfig].curThemeBundle;
     
     /** 设置导航栏背景图片 */

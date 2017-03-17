@@ -15,7 +15,7 @@ UIKIT_EXTERN NSString *KGClassicVoice;
 /// 是否播放欢迎声音
 @property (nonatomic,assign) BOOL canHello; 
 
-/// 欢迎声音,默认是经典类型
+/// 欢迎声音路径,默认是经典类型
 @property (nonatomic,copy) NSString *helloVoice;
 
 /// 当前的主题包

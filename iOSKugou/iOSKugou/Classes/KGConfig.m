@@ -19,6 +19,7 @@ NSString *KGClassicVoice = @"classic.wav";
     dispatch_once(&onceToken, ^{
         instance = [[KGConfig alloc] init];
 #warning 需要持久化读取文件,先简单处理,目前各项都往简单的写
+        // 主题下面有一个json文件,各种配色可以在那上面做
         instance.canHello = true;
         instance.helloVoice = KGClassicVoice;
         

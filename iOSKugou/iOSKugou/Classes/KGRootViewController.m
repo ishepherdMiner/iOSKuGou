@@ -39,7 +39,7 @@
 // helloKugou
 @property (nonatomic,strong) KGHelloKugou *kg;
 
-// 构造主视图，实现 UINavigationController.view 和 HomeViewController.view 一起缩放
+// 构造主视图，实现UINavigationController.view和HomeViewController.view 一起缩放
 @property (nonatomic,strong) UIView *mainView;
 
 @property (nonatomic,assign) CGFloat distance;
@@ -101,8 +101,11 @@
     [self.mainView addSubview:self.homeViewController.view];
     [self.mainView addSubview:self.homeNavigationController.view];
     
-    // 分别指定 Navigation Bar 左右两侧按钮的事件 这个写法倒是第一次写
-    self.homeNavigationController.navigationItem.leftBarButtonItem.action = @selector(showLeft);
+    // [_homeNavigationController.view addSubview:_homeViewController.settingView];
+    
+    // 侧滑
+    UITapGestureRecognizer *slideTap = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(showLeft)];
+    [_homeViewController.settingBtn addGestureRecognizer:slideTap];
     
     // 给主视图绑定 UIPanGestureRecognizer
     UIPanGestureRecognizer *panGesture = self.homeViewController.panGesture;
@@ -157,12 +160,10 @@
     
     // 执行平移和缩放动画
     recongnizer.view.center = CGPointMake(self.view.centerX + trueDistance, self.view.centerY);
-//    recongnizer.view.transform = CGAffineTransformScale(recongnizer.view.transform, proportion, proportion);
     recongnizer.view.transform = CGAffineTransformScale(CGAffineTransformIdentity, proportion, proportion);
     // 执行左视图动画
     CGFloat pro = 0.8 + (_proportionOfLeftView - 0.8) * trueDistance;
     _sidebarViewController.view.center = CGPointMake(_centerOfLeftViewAtBeginning.x + _distanceOfLeftView * trueProportion, _centerOfLeftViewAtBeginning.y - (_proportionOfLeftView - 1) * _sidebarViewController.view.frame.size.height * trueProportion / 2);
-    // _sidebarViewController.view.transform = CGAffineTransformScale(_sidebarViewController.view.transform, pro, pro);
     _sidebarViewController.view.transform = CGAffineTransformScale(CGAffineTransformIdentity, pro, pro);
     
 }
@@ -177,7 +178,6 @@
         self.mainView.center = CGPointMake(self.view.centerX + _distance, self.view.centerY);
         
         // 缩放首页
-        // self.mainView.transform = CGAffineTransformScale(self.mainView.transform, proportion, proportion);
         self.mainView.transform = CGAffineTransformScale(CGAffineTransformIdentity, proportion, proportion);
         if ([showWhat isEqualToString:@"left"]) {
             // 移动左侧菜单的中心

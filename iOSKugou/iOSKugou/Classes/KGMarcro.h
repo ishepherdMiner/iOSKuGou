@@ -20,4 +20,10 @@
 #define KGScreenH KGScreenBounds.size.height
 #define KGScreenW KGScreenBounds.size.width
 
+#define KGNavH 64     // 导航条高度
+#define KGPlayBarH 70 // 播放器高度
+
+// 浅色字体颜色
+#define KGLightFontColor KGHexRGB(0xaaaaaa)
+
 #endif /* KGMarcro_h */

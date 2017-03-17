@@ -16,8 +16,9 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    UIImage *accountSettingImg = [UIImage imageNamed:@"account_setting_kugou"];
-    self.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc] initWithCustomView:[[UIImageView alloc] initWithImage:accountSettingImg]];
+    
+   // 可能没有导航条,先暂时放一边。
+   [self.navigationBar setShadowImage:[UIImage new]];
 }
 
 - (void)didReceiveMemoryWarning {
