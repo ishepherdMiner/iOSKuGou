@@ -39,5 +39,40 @@
 	<array>
 		<string>UIInterfaceOrientationPortrait</string>
 	</array>
+    <key>UIApplicationShortcutItems</key>
+    <array>
+        <dict>
+            <key>UIApplicationShortcutItemTitle</key>
+            <string>听歌识曲</string>
+            <key>UIApplicationShortcutItemType</key>
+            <string>com.kugou.shortcut.recognize</string>
+            <key>UIApplicationShortcutItemIconFile</key>
+            <string>3d_touch_recognize.png</string>
+        </dict>
+        <dict>
+            <key>UIApplicationShortcutItemTitle</key>
+            <string>继续播放</string>
+            <key>UIApplicationShortcutItemType</key>
+            <string>com.kugou.shortcut.playmusic</string>
+            <key>UIApplicationShortcutItemIconFile</key>
+            <string>3d_touch_playmusic.png</string>
+        </dict>
+        <dict>
+            <key>UIApplicationShortcutItemTitle</key>
+            <string>搜索</string>
+            <key>UIApplicationShortcutItemType</key>
+            <string>com.kugou.shortcut.search</string>
+            <key>UIApplicationShortcutItemIconFile</key>
+            <string>3d_touch_search.png</string>
+        </dict>
+        <dict>
+            <key>UIApplicationShortcutItemTitle</key>
+            <string>播放本地音乐</string>
+            <key>UIApplicationShortcutItemType</key>
+            <string>com.kugou.shortcut.local</string>
+            <key>UIApplicationShortcutItemIconFile</key>
+            <string>3d_touch_localmusic.png</string>
+        </dict>
+    </array>
 </dict>
 </plist>

@@ -72,6 +72,10 @@
 		96A511CA1E7984AE003FACAF /* classic.wav in Resources */ = {isa = PBXBuildFile; fileRef = 96A511C91E7984AE003FACAF /* classic.wav */; };
 		96A511CE1E7985D4003FACAF /* KGHelloKugou.m in Sources */ = {isa = PBXBuildFile; fileRef = 96A511CD1E7985D4003FACAF /* KGHelloKugou.m */; };
 		96A511D11E798825003FACAF /* KGConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 96A511D01E798825003FACAF /* KGConfig.m */; };
+		96B787E51E7CF65B00105A9B /* 3d_touch_localmusic.png in Resources */ = {isa = PBXBuildFile; fileRef = 96B787E11E7CF65B00105A9B /* 3d_touch_localmusic.png */; };
+		96B787E61E7CF65B00105A9B /* 3d_touch_playmusic.png in Resources */ = {isa = PBXBuildFile; fileRef = 96B787E21E7CF65B00105A9B /* 3d_touch_playmusic.png */; };
+		96B787E71E7CF65B00105A9B /* 3d_touch_recognize.png in Resources */ = {isa = PBXBuildFile; fileRef = 96B787E31E7CF65B00105A9B /* 3d_touch_recognize.png */; };
+		96B787E81E7CF65B00105A9B /* 3d_touch_search.png in Resources */ = {isa = PBXBuildFile; fileRef = 96B787E41E7CF65B00105A9B /* 3d_touch_search.png */; };
 		F308DAF5F33A3C7FE60A88C3 /* libPods-iOSKugouTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DC6B5E00BFFB43C794C8B551 /* libPods-iOSKugouTests.a */; };
 /* End PBXBuildFile section */
 
@@ -296,6 +300,10 @@
 		96A511CD1E7985D4003FACAF /* KGHelloKugou.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KGHelloKugou.m; sourceTree = "<group>"; };
 		96A511CF1E798825003FACAF /* KGConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KGConfig.h; sourceTree = "<group>"; };
 		96A511D01E798825003FACAF /* KGConfig.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KGConfig.m; sourceTree = "<group>"; };
+		96B787E11E7CF65B00105A9B /* 3d_touch_localmusic.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 3d_touch_localmusic.png; sourceTree = "<group>"; };
+		96B787E21E7CF65B00105A9B /* 3d_touch_playmusic.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 3d_touch_playmusic.png; sourceTree = "<group>"; };
+		96B787E31E7CF65B00105A9B /* 3d_touch_recognize.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 3d_touch_recognize.png; sourceTree = "<group>"; };
+		96B787E41E7CF65B00105A9B /* 3d_touch_search.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 3d_touch_search.png; sourceTree = "<group>"; };
 		98EA256534891C09452AA4E6 /* Pods-iOSKugouTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOSKugouTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-iOSKugouTests/Pods-iOSKugouTests.debug.xcconfig"; sourceTree = "<group>"; };
 		B76DD3CDE2DBABF3014A8360 /* Pods-iOSKugouTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOSKugouTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-iOSKugouTests/Pods-iOSKugouTests.release.xcconfig"; sourceTree = "<group>"; };
 		DC6B5E00BFFB43C794C8B551 /* libPods-iOSKugouTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-iOSKugouTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -631,6 +639,10 @@
 			isa = PBXGroup;
 			children = (
 				96A511501E793406003FACAF /* main.m */,
+				96B787E11E7CF65B00105A9B /* 3d_touch_localmusic.png */,
+				96B787E21E7CF65B00105A9B /* 3d_touch_playmusic.png */,
+				96B787E31E7CF65B00105A9B /* 3d_touch_recognize.png */,
+				96B787E41E7CF65B00105A9B /* 3d_touch_search.png */,
 				966E2B621E7B540200688FB4 /* account_settings.png */,
 				96A5115B1E793406003FACAF /* Assets.xcassets */,
 				96A511BA1E796AC2003FACAF /* LaunchImage-568h@2x.png */,
@@ -900,9 +912,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				96B787E61E7CF65B00105A9B /* 3d_touch_playmusic.png in Resources */,
 				96A5115F1E793406003FACAF /* LaunchScreen.storyboard in Resources */,
 				96A511CA1E7984AE003FACAF /* classic.wav in Resources */,
 				96A5115C1E793406003FACAF /* Assets.xcassets in Resources */,
+				96B787E81E7CF65B00105A9B /* 3d_touch_search.png in Resources */,
 				965D10261E7BCD7600ED2DBD /* kxmovie.bundle in Resources */,
 				96A511B71E794B51003FACAF /* customTheme_Purple.bundle in Resources */,
 				96A511B61E794B51003FACAF /* customTheme_Pink.bundle in Resources */,
@@ -912,8 +926,10 @@
 				96A511C31E796AC2003FACAF /* LaunchImage@2x.png in Resources */,
 				96A511B41E794B51003FACAF /* customTheme_Green.bundle in Resources */,
 				96A511BF1E796AC2003FACAF /* LaunchImage-568h@2x.png in Resources */,
+				96B787E51E7CF65B00105A9B /* 3d_touch_localmusic.png in Resources */,
 				966E2B631E7B540200688FB4 /* account_settings.png in Resources */,
 				96A511A31E794585003FACAF /* defaultTheme.bundle in Resources */,
+				96B787E71E7CF65B00105A9B /* 3d_touch_recognize.png in Resources */,
 				96A511C21E796AC2003FACAF /* LaunchImage-800-Portrait-736h@3x.png in Resources */,
 				96A511B01E794B51003FACAF /* customTheme_Blue.bundle in Resources */,
 				96A511B51E794B51003FACAF /* customTheme_Orange.bundle in Resources */,

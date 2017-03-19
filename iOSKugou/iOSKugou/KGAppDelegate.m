@@ -36,8 +36,17 @@
 
 - (void)configure {
     [self setNavBarStyle];
+    [self set3dTouch];
 }
 
+- (void)set3dTouch {
+    UIApplicationShortcutIcon *share = [UIApplicationShortcutIcon iconWithType:UIApplicationShortcutIconTypeShare];
+    
+    UIApplicationShortcutItem *itemShare = [[UIApplicationShortcutItem alloc] initWithType:@"com.kugou.shortcut.share" localizedTitle:@"分享 “酷狗”音乐" localizedSubtitle:nil icon:share userInfo:nil];
+    
+    [UIApplication sharedApplication].shortcutItems = @[itemShare,itemShare,itemShare,itemShare,itemShare];
+}
+    
 /// 统一设置导航栏外观,这个在配置中决定更好,下次修改
 - (void)setNavBarStyle {
     
@@ -74,6 +83,11 @@
                            NSForegroundColorAttributeName : KGHexRGB(0xffffff)
                            };
     [navBar setTitleTextAttributes:dict];
+}
+    
+- (void)application:(UIApplication *)application performActionForShortcutItem:(UIApplicationShortcutItem *)shortcutItem completionHandler:(void (^)(BOOL))completionHandler {
+    
+    // 先写一个空的
 }
 
 
